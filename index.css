@@ -1,8 +1,30 @@
 body {
-	background: black;
+	background-color: red;
 }
 
 .text {
-	color: white;
+	color: yellow;
 	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
+
+#title {
+	font-size: 60px;
+	text-align: center;
+}
+
+#pepe img{
+	display: block;
+	margin: 0 auto;
+}
+
+.banner{
+	height: 50px;
+	width: 50px;
+}
+
+marquee {
+	color: pink;
+	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+
