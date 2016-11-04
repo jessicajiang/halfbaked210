@@ -12,6 +12,11 @@ body {
 	text-align: center;
 }
 
+.genimg img {
+	display: block;
+	margin: 0 auto;
+}
+
 #pepe img{
 	display: block;
 	margin: 0 auto;

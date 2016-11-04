@@ -2,11 +2,12 @@
 var speed=100; // speed colours change, 1 second = 1000
 var glow=3; // can be set from '0' for no glow, to 10
 var raincol=new Array("#ff0000", "#ff5500", "#ffaa00", "#ffff00", "#aaff00", "#55ff00", "#00ff00", "#00ff55", "#00ffaa", "#00ffff", "#00aaff", "#0055ff", "#0000ff", "#5500ff", "#aa00ff", "#ff00ff", "#ff00aa", "#ff0055"); // change the colours if you want to
-var alink=""; // page to link text to 
+var alink="asdfjaksldf;adjksfl"; // page to link text to 
 
 var rainbow, raintxt, raincnt=0;
 
 function addLoadEvent(funky) {
+	console.log("it me");
   var oldonload=window.onload;
   if (typeof(oldonload)!='function') window.onload=funky;
   else window.onload=function() {
@@ -18,6 +19,7 @@ function addLoadEvent(funky) {
 addLoadEvent(regenbogen);
 
 function regenbogen() { if (document.getElementById) {
+	console.log("it me");
   var i, rainbeau;
   rainbow=document.getElementById("rainbow");
   raintxt=rainbow.firstChild.nodeValue;
