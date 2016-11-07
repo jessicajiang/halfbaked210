@@ -6,20 +6,7 @@ var alink="asdfjaksldf;adjksfl"; // page to link text to
 
 var rainbow, raintxt, raincnt=0;
 
-function addLoadEvent(funky) {
-	console.log("it me");
-  var oldonload=window.onload;
-  if (typeof(oldonload)!='function') window.onload=funky;
-  else window.onload=function() {
-    if (oldonload) oldonload();
-    funky();
-  }
-}
-
-addLoadEvent(regenbogen);
-
 function regenbogen() { if (document.getElementById) {
-	console.log("it me");
   var i, rainbeau;
   rainbow=document.getElementById("rainbow");
   raintxt=rainbow.firstChild.nodeValue;
@@ -62,7 +49,10 @@ var facia=String.fromCharCode(9660)+" 1 2 "+String.fromCharCode(9668)+" 4 5 "+St
 var clok;
 var newx=xmo=400;
 var newy=ymo=300;
-window.onload=function() { if (document.getElementById) {
+window.onload=function() { 
+
+  regenbogen();
+	if (document.getElementById) {
   var i, j, k;
   clok=document.createElement("div");
   clok.style.position="absolute";
